@@ -1,0 +1,1308 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://anthem-10x.org/Shankar_demo_v1.owl"
+         xmlns="http://anthem-10x.org/Shankar_demo_v1.owl#"
+         xmlns:owlr="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
+
+<owl:Ontology rdf:about="http://anthem-10x.org/Shankar_demo_v1.owl"/>
+
+<owl:ObjectProperty rdf:about="#has_a_memberLiabilityEstimateSubmitResponse(claimsResponse.MLESubmitResponse)">
+  <rdfs:domain rdf:resource="#claimsResponse"/>
+  <rdfs:range rdf:resource="#memberLiabilityEstimateSubmitResponse"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_memberLiabilityEstimateSubmitResponse(claimsResponse.MLESubmitResponse)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_brand(payer.brand)">
+  <rdfs:domain rdf:resource="#payer"/>
+  <rdfs:range rdf:resource="#brand"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_brand(payer.brand)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_state(license.state)">
+  <rdfs:domain rdf:resource="#license"/>
+  <rdfs:range rdf:resource="#state"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_state(license.state)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_state(address.state)">
+  <rdfs:domain rdf:resource="#address"/>
+  <rdfs:range rdf:resource="#state"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_state(address.state)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_country(address.country)">
+  <rdfs:domain rdf:resource="#address"/>
+  <rdfs:range rdf:resource="#country"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_country(address.country)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_license(billingProvider.license)">
+  <rdfs:domain rdf:resource="#billingProvider"/>
+  <rdfs:range rdf:resource="#license"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_license(billingProvider.license)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_address(billingProvider.address)">
+  <rdfs:domain rdf:resource="#billingProvider"/>
+  <rdfs:range rdf:resource="#address"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_address(billingProvider.address)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_contact(billingProvider.contact)">
+  <rdfs:domain rdf:resource="#billingProvider"/>
+  <rdfs:range rdf:resource="#contact"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_contact(billingProvider.contact)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_speciality(billingProvider.speciality)">
+  <rdfs:domain rdf:resource="#billingProvider"/>
+  <rdfs:range rdf:resource="#speciality"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_speciality(billingProvider.speciality)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_address(subscriber.address)">
+  <rdfs:domain rdf:resource="#subscriber"/>
+  <rdfs:range rdf:resource="#address"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_address(subscriber.address)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_genderCode(subscriber.genderCd)">
+  <rdfs:domain rdf:resource="#subscriber"/>
+  <rdfs:range rdf:resource="#genderCode"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_genderCode(subscriber.genderCd)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_address(patient.address)">
+  <rdfs:domain rdf:resource="#patient"/>
+  <rdfs:range rdf:resource="#address"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_address(patient.address)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_genderCode(patient.genderCd)">
+  <rdfs:domain rdf:resource="#patient"/>
+  <rdfs:range rdf:resource="#genderCode"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_genderCode(patient.genderCd)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_relationshipCode(patient.relationshipCd)">
+  <rdfs:domain rdf:resource="#patient"/>
+  <rdfs:range rdf:resource="#relationshipCode"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_relationshipCode(patient.relationshipCd)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_contact(patient.contact)">
+  <rdfs:domain rdf:resource="#patient"/>
+  <rdfs:range rdf:resource="#contact"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_contact(patient.contact)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_items(diagnosisCode.diagnosisCdItem)">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#diagnosisCode"/>
+  <rdfs:range rdf:resource="#diagnosisCodeItem"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_items(message.messageItem)">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#message"/>
+  <rdfs:range rdf:resource="#messageItem"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_remark(messageItem.remark)">
+  <rdfs:domain rdf:resource="#messageItem"/>
+  <rdfs:range rdf:resource="#remark"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_remark(messageItem.remark)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_items(remark.remarkItem)">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#remark"/>
+  <rdfs:range rdf:resource="#remarkItem"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_qualifierCode(diagnosisCodeItem.qualifierCd)">
+  <rdfs:domain rdf:resource="#diagnosisCodeItem"/>
+  <rdfs:range rdf:resource="#qualifierCode"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_qualifierCode(diagnosisCodeItem.qualifierCd)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_items(serviceLines.serviceLinesItem)">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#serviceLines"/>
+  <rdfs:range rdf:resource="#serviceLinesItem"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_renderingProvider(serviceLinesItem.renderingProvider)">
+  <rdfs:domain rdf:resource="#serviceLinesItem"/>
+  <rdfs:range rdf:resource="#renderingProvider"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_renderingProvider(serviceLinesItem.renderingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_serviceProcedureCode(serviceLinesItem.serviceProcedureCd)">
+  <rdfs:domain rdf:resource="#serviceLinesItem"/>
+  <rdfs:range rdf:resource="#serviceProcedureCode"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_serviceProcedureCode(serviceLinesItem.serviceProcedureCd)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_memberResponsibilityAmount(serviceLinesItem.mbrResponsibilityAmt)">
+  <rdfs:domain rdf:resource="#serviceLinesItem"/>
+  <rdfs:range rdf:resource="#memberResponsibilityAmount"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_memberResponsibilityAmount(serviceLinesItem.mbrResponsibilityAmt)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_providerResponsibilityAmount(serviceLinesItem.providerResponsibilityAmt)">
+  <rdfs:domain rdf:resource="#serviceLinesItem"/>
+  <rdfs:range rdf:resource="#providerResponsibilityAmount"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_providerResponsibilityAmount(serviceLinesItem.providerResponsibilityAmt)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_diagnosisPointer1(serviceLinesItem.diagnosisPointer1)">
+  <rdfs:domain rdf:resource="#serviceLinesItem"/>
+  <rdfs:range rdf:resource="#diagnosisPointer1"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_diagnosisPointer1(serviceLinesItem.diagnosisPointer1)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_speciality(renderingProvider.speciality)">
+  <rdfs:domain rdf:resource="#renderingProvider"/>
+  <rdfs:range rdf:resource="#speciality"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_speciality(renderingProvider.speciality)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_license(renderingProvider.license)">
+  <rdfs:domain rdf:resource="#renderingProvider"/>
+  <rdfs:range rdf:resource="#license"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_license(renderingProvider.license)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_address(renderingProvider.address)">
+  <rdfs:domain rdf:resource="#renderingProvider"/>
+  <rdfs:range rdf:resource="#address"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_address(renderingProvider.address)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_message(paymentAmount.message)">
+  <rdfs:domain rdf:resource="#paymentAmount"/>
+  <rdfs:range rdf:resource="#message"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_message(paymentAmount.message)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_message(memberResponsibilityAmount.message)">
+  <rdfs:domain rdf:resource="#memberResponsibilityAmount"/>
+  <rdfs:range rdf:resource="#message"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_message(memberResponsibilityAmount.message)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_message(coinsuranceAmount.message)">
+  <rdfs:domain rdf:resource="#coinsuranceAmount"/>
+  <rdfs:range rdf:resource="#message"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_message(coinsuranceAmount.message)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_message(deductibleAmount.message)">
+  <rdfs:domain rdf:resource="#deductibleAmount"/>
+  <rdfs:range rdf:resource="#message"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_message(deductibleAmount.message)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_message(providerResponsibilityAmount.message)">
+  <rdfs:domain rdf:resource="#providerResponsibilityAmount"/>
+  <rdfs:range rdf:resource="#message"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_message(providerResponsibilityAmount.message)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_placeOfService(serviceInformationResponse.placeOfService)">
+  <rdfs:domain rdf:resource="#serviceInformationResponse"/>
+  <rdfs:range rdf:resource="#placeOfService"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_placeOfService(serviceInformationResponse.placeOfService)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_payeeType(serviceInformationResponse.payeeType)">
+  <rdfs:domain rdf:resource="#serviceInformationResponse"/>
+  <rdfs:range rdf:resource="#payeeType"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_payeeType(serviceInformationResponse.payeeType)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_diagnosisCode(serviceInformationResponse.diagnosisCd)">
+  <rdfs:domain rdf:resource="#serviceInformationResponse"/>
+  <rdfs:range rdf:resource="#diagnosisCode"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_diagnosisCode(serviceInformationResponse.diagnosisCd)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_serviceLines(serviceInformationResponse.serviceLines)">
+  <rdfs:domain rdf:resource="#serviceInformationResponse"/>
+  <rdfs:range rdf:resource="#serviceLines"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_serviceLines(serviceInformationResponse.serviceLines)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_payer(memberLiabilityEstimateSubmitResponse.payer)">
+  <rdfs:domain rdf:resource="#memberLiabilityEstimateSubmitResponse"/>
+  <rdfs:range rdf:resource="#payer"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_payer(memberLiabilityEstimateSubmitResponse.payer)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_billingProvider(memberLiabilityEstimateSubmitResponse.billingProvider)">
+  <rdfs:domain rdf:resource="#memberLiabilityEstimateSubmitResponse"/>
+  <rdfs:range rdf:resource="#billingProvider"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_billingProvider(memberLiabilityEstimateSubmitResponse.billingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_subscriber(memberLiabilityEstimateSubmitResponse.subscriber)">
+  <rdfs:domain rdf:resource="#memberLiabilityEstimateSubmitResponse"/>
+  <rdfs:range rdf:resource="#subscriber"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_subscriber(memberLiabilityEstimateSubmitResponse.subscriber)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_patient(memberLiabilityEstimateSubmitResponse.patient)">
+  <rdfs:domain rdf:resource="#memberLiabilityEstimateSubmitResponse"/>
+  <rdfs:range rdf:resource="#patient"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_patient(memberLiabilityEstimateSubmitResponse.patient)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_a_serviceInformation(memberLiabilityEstimateSubmitResponse.serviceInformationResponse)">
+  <rdfs:domain rdf:resource="#memberLiabilityEstimateSubmitResponse"/>
+  <rdfs:range rdf:resource="#serviceInformationResponse"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_serviceInformation(memberLiabilityEstimateSubmitResponse.serviceInformationResponse)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_id(payer)">
+  <rdfs:domain rdf:resource="#payer"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_id(payer)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_name(payer)">
+  <rdfs:domain rdf:resource="#payer"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_name(payer)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_ein(payer)">
+  <rdfs:domain rdf:resource="#payer"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_ein(payer)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_code(brand)">
+  <rdfs:domain rdf:resource="#brand"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_code(brand)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_name(brand)">
+  <rdfs:domain rdf:resource="#brand"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_name(brand)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_description(brand)">
+  <rdfs:domain rdf:resource="#brand"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_description(brand)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_number(license)">
+  <rdfs:domain rdf:resource="#license"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_number(license)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_line1(address)">
+  <rdfs:domain rdf:resource="#address"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_line1(address)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_line2(address)">
+  <rdfs:domain rdf:resource="#address"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_line2(address)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_city(address)">
+  <rdfs:domain rdf:resource="#address"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_city(address)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_zipCode(address)">
+  <rdfs:domain rdf:resource="#address"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_zipCode(address)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_name(contact)">
+  <rdfs:domain rdf:resource="#contact"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_name(contact)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_phone(contact)">
+  <rdfs:domain rdf:resource="#contact"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_phone(contact)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_extension(contact)">
+  <rdfs:domain rdf:resource="#contact"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_extension(contact)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_fax(contact)">
+  <rdfs:domain rdf:resource="#contact"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_fax(contact)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_email(contact)">
+  <rdfs:domain rdf:resource="#contact"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_email(contact)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_code(country)">
+  <rdfs:domain rdf:resource="#country"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_code(country)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_name(country)">
+  <rdfs:domain rdf:resource="#country"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_name(country)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_description(country)">
+  <rdfs:domain rdf:resource="#country"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_description(country)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_code(speciality)">
+  <rdfs:domain rdf:resource="#speciality"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_code(speciality)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_name(speciality)">
+  <rdfs:domain rdf:resource="#speciality"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_name(speciality)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_description(speciality)">
+  <rdfs:domain rdf:resource="#speciality"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_description(speciality)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_providerId(billingProvider)">
+  <rdfs:domain rdf:resource="#billingProvider"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_providerId(billingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_npi(billingProvider)">
+  <rdfs:domain rdf:resource="#billingProvider"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_npi(billingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_taxId(billingProvider)">
+  <rdfs:domain rdf:resource="#billingProvider"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_taxId(billingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_upin(billingProvider)">
+  <rdfs:domain rdf:resource="#billingProvider"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_upin(billingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_ssn(billingProvider)">
+  <rdfs:domain rdf:resource="#billingProvider"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_ssn(billingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_ein(billingProvider)">
+  <rdfs:domain rdf:resource="#billingProvider"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_ein(billingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_lastName(billingProvider)">
+  <rdfs:domain rdf:resource="#billingProvider"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_lastName(billingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_firstName(billingProvider)">
+  <rdfs:domain rdf:resource="#billingProvider"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_firstName(billingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_middleName(billingProvider)">
+  <rdfs:domain rdf:resource="#billingProvider"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_middleName(billingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_suffix(billingProvider)">
+  <rdfs:domain rdf:resource="#billingProvider"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_suffix(billingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_organizationName(billingProvider)">
+  <rdfs:domain rdf:resource="#billingProvider"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_organizationName(billingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_payToAddress(billingProvider)">
+  <rdfs:domain rdf:resource="#billingProvider"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_payToAddress(billingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_code(genderCode)">
+  <rdfs:domain rdf:resource="#genderCode"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_code(genderCode)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_name(genderCode)">
+  <rdfs:domain rdf:resource="#genderCode"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_name(genderCode)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_description(genderCode)">
+  <rdfs:domain rdf:resource="#genderCode"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_description(genderCode)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_hcid(subscriber)">
+  <rdfs:domain rdf:resource="#subscriber"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_hcid(subscriber)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_groupId(subscriber)">
+  <rdfs:domain rdf:resource="#subscriber"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_groupId(subscriber)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_groupName(subscriber)">
+  <rdfs:domain rdf:resource="#subscriber"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_groupName(subscriber)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_lastName(subscriber)">
+  <rdfs:domain rdf:resource="#subscriber"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_lastName(subscriber)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_firstName(subscriber)">
+  <rdfs:domain rdf:resource="#subscriber"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_firstName(subscriber)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_middleName(subscriber)">
+  <rdfs:domain rdf:resource="#subscriber"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_middleName(subscriber)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_suffix(subscriber)">
+  <rdfs:domain rdf:resource="#subscriber"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_suffix(subscriber)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_dateOfBirth(subscriber)">
+  <rdfs:domain rdf:resource="#subscriber"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_dateOfBirth(subscriber)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_code(relationshipCode)">
+  <rdfs:domain rdf:resource="#relationshipCode"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_code(relationshipCode)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_name(relationshipCode)">
+  <rdfs:domain rdf:resource="#relationshipCode"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_name(relationshipCode)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_description(relationshipCode)">
+  <rdfs:domain rdf:resource="#relationshipCode"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_description(relationshipCode)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_hcid(patient)">
+  <rdfs:domain rdf:resource="#patient"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_hcid(patient)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_lastName(patient)">
+  <rdfs:domain rdf:resource="#patient"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_lastName(patient)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_firstName(patient)">
+  <rdfs:domain rdf:resource="#patient"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_firstName(patient)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_middleName(patient)">
+  <rdfs:domain rdf:resource="#patient"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_middleName(patient)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_suffix(patient)">
+  <rdfs:domain rdf:resource="#patient"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_suffix(patient)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_dateOfBirth(patient)">
+  <rdfs:domain rdf:resource="#patient"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_dateOfBirth(patient)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_patientControlNumber(patient)">
+  <rdfs:domain rdf:resource="#patient"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_patientControlNumber(patient)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_code(state)">
+  <rdfs:domain rdf:resource="#state"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_code(state)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_name(state)">
+  <rdfs:domain rdf:resource="#state"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_name(state)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_description(state)">
+  <rdfs:domain rdf:resource="#state"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_description(state)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_code(placeOfService)">
+  <rdfs:domain rdf:resource="#placeOfService"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_code(placeOfService)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_name(placeOfService)">
+  <rdfs:domain rdf:resource="#placeOfService"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_name(placeOfService)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_description(placeOfService)">
+  <rdfs:domain rdf:resource="#placeOfService"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_description(placeOfService)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_code(qualifierCode)">
+  <rdfs:domain rdf:resource="#qualifierCode"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_code(qualifierCode)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_name(qualifierCode)">
+  <rdfs:domain rdf:resource="#qualifierCode"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_name(qualifierCode)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_description(qualifierCode)">
+  <rdfs:domain rdf:resource="#qualifierCode"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_description(qualifierCode)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_code(payeeType)">
+  <rdfs:domain rdf:resource="#payeeType"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_code(payeeType)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_name(payeeType)">
+  <rdfs:domain rdf:resource="#payeeType"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_name(payeeType)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_description(payeeType)">
+  <rdfs:domain rdf:resource="#payeeType"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_description(payeeType)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_code(messageItem)">
+  <rdfs:domain rdf:resource="#messageItem"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_code(messageItem)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_codeType(messageItem)">
+  <rdfs:domain rdf:resource="#messageItem"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_codeType(messageItem)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_description(messageItem)">
+  <rdfs:domain rdf:resource="#messageItem"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_description(messageItem)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_entity(remarkItem)">
+  <rdfs:domain rdf:resource="#remarkItem"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_entity(remarkItem)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_code(remarkItem)">
+  <rdfs:domain rdf:resource="#remarkItem"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_code(remarkItem)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_codeType(remarkItem)">
+  <rdfs:domain rdf:resource="#remarkItem"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_codeType(remarkItem)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_description(remarkItem)">
+  <rdfs:domain rdf:resource="#remarkItem"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_description(remarkItem)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_code(diagnosisCodeItem)">
+  <rdfs:domain rdf:resource="#diagnosisCodeItem"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_code(diagnosisCodeItem)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_name(diagnosisCodeItem)">
+  <rdfs:domain rdf:resource="#diagnosisCodeItem"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_name(diagnosisCodeItem)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_description(diagnosisCodeItem)">
+  <rdfs:domain rdf:resource="#diagnosisCodeItem"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_description(diagnosisCodeItem)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_code(modifierCodeItem)">
+  <rdfs:domain rdf:resource="#modifierCodeItem"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_code(modifierCodeItem)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_name(modifierCodeItem)">
+  <rdfs:domain rdf:resource="#modifierCodeItem"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_name(modifierCodeItem)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_description(modifierCodeItem)">
+  <rdfs:domain rdf:resource="#modifierCodeItem"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_description(modifierCodeItem)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_serviceStartDate(serviceLinesItem)">
+  <rdfs:domain rdf:resource="#serviceLinesItem"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_serviceStartDate(serviceLinesItem)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_serviceEndDate(serviceLinesItem)">
+  <rdfs:domain rdf:resource="#serviceLinesItem"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_serviceEndDate(serviceLinesItem)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_chargeAmount(serviceLinesItem)">
+  <rdfs:domain rdf:resource="#serviceLinesItem"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_chargeAmount(serviceLinesItem)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_npi(renderingProvider)">
+  <rdfs:domain rdf:resource="#renderingProvider"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_npi(renderingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_upin(renderingProvider)">
+  <rdfs:domain rdf:resource="#renderingProvider"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_upin(renderingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_providerId(renderingProvider)">
+  <rdfs:domain rdf:resource="#renderingProvider"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_providerId(renderingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_lastName(renderingProvider)">
+  <rdfs:domain rdf:resource="#renderingProvider"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_lastName(renderingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_firstName(renderingProvider)">
+  <rdfs:domain rdf:resource="#renderingProvider"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_firstName(renderingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_middleName(renderingProvider)">
+  <rdfs:domain rdf:resource="#renderingProvider"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_middleName(renderingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_suffix(renderingProvider)">
+  <rdfs:domain rdf:resource="#renderingProvider"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_suffix(renderingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_organizationName(renderingProvider)">
+  <rdfs:domain rdf:resource="#renderingProvider"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_organizationName(renderingProvider)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_code(serviceProcedureCode)">
+  <rdfs:domain rdf:resource="#serviceProcedureCode"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_code(serviceProcedureCode)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_name(serviceProcedureCode)">
+  <rdfs:domain rdf:resource="#serviceProcedureCode"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_name(serviceProcedureCode)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_description(serviceProcedureCode)">
+  <rdfs:domain rdf:resource="#serviceProcedureCode"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_description(serviceProcedureCode)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_code(diagnosisPointer1)">
+  <rdfs:domain rdf:resource="#diagnosisPointer1"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_code(diagnosisPointer1)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_name(diagnosisPointer1)">
+  <rdfs:domain rdf:resource="#diagnosisPointer1"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_name(diagnosisPointer1)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_description(diagnosisPointer1)">
+  <rdfs:domain rdf:resource="#diagnosisPointer1"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_description(diagnosisPointer1)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_amount(paymentAmount)">
+  <rdfs:domain rdf:resource="#paymentAmount"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_amount(paymentAmount)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_amount(memberResponsibilityAmount)">
+  <rdfs:domain rdf:resource="#memberResponsibilityAmount"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_amount(memberResponsibilityAmount)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_amount(coinsuranceAmount)">
+  <rdfs:domain rdf:resource="#coinsuranceAmount"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_amount(coinsuranceAmount)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_amount(deductibleAmount)">
+  <rdfs:domain rdf:resource="#deductibleAmount"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_amount(deductibleAmount)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_amount(providerResponsibilityAmount)">
+  <rdfs:domain rdf:resource="#providerResponsibilityAmount"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_amount(providerResponsibilityAmount)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_totalSpendingAccountPaymentAmount(serviceInformationResponse)">
+  <rdfs:domain rdf:resource="#serviceInformationResponse"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_totalSpendingAccountPaymentAmount(serviceInformationResponse)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_spendingAccountBeginBalanceAmount(serviceInformationResponse)">
+  <rdfs:domain rdf:resource="#serviceInformationResponse"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_spendingAccountBeginBalanceAmount(serviceInformationResponse)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_spendingAccountClosingBalanceAmount(serviceInformationResponse)">
+  <rdfs:domain rdf:resource="#serviceInformationResponse"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_spendingAccountClosingBalanceAmount(serviceInformationResponse)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_totalChargeAmount(serviceInformationResponse)">
+  <rdfs:domain rdf:resource="#serviceInformationResponse"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_totalChargeAmount(serviceInformationResponse)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_totalProviderResponsibilityAmount(serviceInformationResponse)">
+  <rdfs:domain rdf:resource="#serviceInformationResponse"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_totalProviderResponsibilityAmount(serviceInformationResponse)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_totalMemberResponsibilityAmount(serviceInformationResponse)">
+  <rdfs:domain rdf:resource="#serviceInformationResponse"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_totalMemberResponsibilityAmount(serviceInformationResponse)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_totalPaymentAmount(serviceInformationResponse)">
+  <rdfs:domain rdf:resource="#serviceInformationResponse"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_totalPaymentAmount(serviceInformationResponse)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#has_a_memberLiabilityEstimateRequestDate(memberLiabilityEstimateSubmitResponse)">
+  <rdfs:domain rdf:resource="#memberLiabilityEstimateSubmitResponse"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_a_memberLiabilityEstimateRequestDate(memberLiabilityEstimateSubmitResponse)</owlr:python_name>
+  <mapped_from rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mapped from: MemberLiabilityEstimator Submit API </mapped_from>
+</owl:DatatypeProperty>
+
+<owl:AnnotationProperty rdf:about="#mapped_from"/>
+
+<owl:Class rdf:about="#brand">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#serviceLinesItem">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#contact">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#diagnosisCodeItem">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#state">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#message">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#country">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#payer">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#coinsuranceAmount">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#license">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#payeeType">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#speciality">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#remark">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#modifierCodeItem">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#placeOfService">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#diagnosisPointer1">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#billingProvider">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#subscriber">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#deductibleAmount">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#renderingProvider">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#serviceLines">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#serviceInformationResponse">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#messageItem">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#serviceProcedureCode">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#providerResponsibilityAmount">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#claimsResponse">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#memberResponsibilityAmount">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#diagnosisCode">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#paymentAmount">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#patient">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#relationshipCode">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#memberLiabilityEstimateSubmitResponse">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#genderCode">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#remarkItem">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#address">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#qualifierCode">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="#brand"/>
+    <rdf:Description rdf:about="#serviceLinesItem"/>
+    <rdf:Description rdf:about="#contact"/>
+    <rdf:Description rdf:about="#diagnosisCodeItem"/>
+    <rdf:Description rdf:about="#state"/>
+    <rdf:Description rdf:about="#message"/>
+    <rdf:Description rdf:about="#country"/>
+    <rdf:Description rdf:about="#payer"/>
+    <rdf:Description rdf:about="#coinsuranceAmount"/>
+    <rdf:Description rdf:about="#license"/>
+    <rdf:Description rdf:about="#payeeType"/>
+    <rdf:Description rdf:about="#speciality"/>
+    <rdf:Description rdf:about="#remark"/>
+    <rdf:Description rdf:about="#modifierCodeItem"/>
+    <rdf:Description rdf:about="#placeOfService"/>
+    <rdf:Description rdf:about="#diagnosisPointer1"/>
+    <rdf:Description rdf:about="#billingProvider"/>
+    <rdf:Description rdf:about="#subscriber"/>
+    <rdf:Description rdf:about="#deductibleAmount"/>
+    <rdf:Description rdf:about="#renderingProvider"/>
+    <rdf:Description rdf:about="#serviceLines"/>
+    <rdf:Description rdf:about="#serviceInformationResponse"/>
+    <rdf:Description rdf:about="#messageItem"/>
+    <rdf:Description rdf:about="#serviceProcedureCode"/>
+    <rdf:Description rdf:about="#providerResponsibilityAmount"/>
+    <rdf:Description rdf:about="#claimsResponse"/>
+    <rdf:Description rdf:about="#memberResponsibilityAmount"/>
+    <rdf:Description rdf:about="#diagnosisCode"/>
+    <rdf:Description rdf:about="#paymentAmount"/>
+    <rdf:Description rdf:about="#patient"/>
+    <rdf:Description rdf:about="#relationshipCode"/>
+    <rdf:Description rdf:about="#memberLiabilityEstimateSubmitResponse"/>
+    <rdf:Description rdf:about="#genderCode"/>
+    <rdf:Description rdf:about="#remarkItem"/>
+    <rdf:Description rdf:about="#address"/>
+    <rdf:Description rdf:about="#qualifierCode"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="#brand"/>
+    <rdf:Description rdf:about="#serviceLinesItem"/>
+    <rdf:Description rdf:about="#contact"/>
+    <rdf:Description rdf:about="#diagnosisCodeItem"/>
+    <rdf:Description rdf:about="#state"/>
+    <rdf:Description rdf:about="#message"/>
+    <rdf:Description rdf:about="#country"/>
+    <rdf:Description rdf:about="#payer"/>
+    <rdf:Description rdf:about="#coinsuranceAmount"/>
+    <rdf:Description rdf:about="#license"/>
+    <rdf:Description rdf:about="#payeeType"/>
+    <rdf:Description rdf:about="#speciality"/>
+    <rdf:Description rdf:about="#remark"/>
+    <rdf:Description rdf:about="#modifierCodeItem"/>
+    <rdf:Description rdf:about="#placeOfService"/>
+    <rdf:Description rdf:about="#diagnosisPointer1"/>
+    <rdf:Description rdf:about="#billingProvider"/>
+    <rdf:Description rdf:about="#subscriber"/>
+    <rdf:Description rdf:about="#deductibleAmount"/>
+    <rdf:Description rdf:about="#renderingProvider"/>
+    <rdf:Description rdf:about="#serviceLines"/>
+    <rdf:Description rdf:about="#serviceInformationResponse"/>
+    <rdf:Description rdf:about="#messageItem"/>
+    <rdf:Description rdf:about="#serviceProcedureCode"/>
+    <rdf:Description rdf:about="#providerResponsibilityAmount"/>
+    <rdf:Description rdf:about="#claimsResponse"/>
+    <rdf:Description rdf:about="#memberResponsibilityAmount"/>
+    <rdf:Description rdf:about="#diagnosisCode"/>
+    <rdf:Description rdf:about="#paymentAmount"/>
+    <rdf:Description rdf:about="#patient"/>
+    <rdf:Description rdf:about="#relationshipCode"/>
+    <rdf:Description rdf:about="#memberLiabilityEstimateSubmitResponse"/>
+    <rdf:Description rdf:about="#genderCode"/>
+    <rdf:Description rdf:about="#remarkItem"/>
+    <rdf:Description rdf:about="#address"/>
+    <rdf:Description rdf:about="#qualifierCode"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+
+</rdf:RDF>
